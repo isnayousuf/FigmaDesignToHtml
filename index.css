@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Inter', sans-serif; 
 }
 body{
     background-color: #fffbfb;
@@ -14,6 +14,8 @@ body{
 }
 .first-sec{
     width: 12vw;
+    height: 105vh;
+    margin-bottom: 0;
     padding: 1.5rem;
     background-color: black;
 }
@@ -28,11 +30,17 @@ body{
 .left-links ul {
     list-style-type: none;
 }
-.left-links ul li {
+.left-links ul li{
     padding: 1rem;
     color: white;
     opacity: 0.4;
+    
 }
+.left-links ul li a{
+    color: white;
+    text-decoration: none;
+}
+
 .left-links ul li:hover{
     opacity: 1;
 }
@@ -41,7 +49,7 @@ body{
 }
 .left-links ul li:last-child{
     position: relative;
-    top: 18rem;
+    top: 17.5rem;
 }
 .second-sec{
     width: 39vw;
@@ -91,6 +99,10 @@ body{
     width: 3.8rem;
     height: 2.5rem;
     padding: 0.5rem 0;
+}
+#ud-img{
+    width: 2.5rem;
+    height: 2.5rem;
 }
 .time p{
     opacity: 0.5;
@@ -184,6 +196,7 @@ body{
 }
 .progress-list {
     list-style-type: none;
+    padding-right: 1rem;
 }
 .progress-list li:nth-child(1)::before{
      content: "•"; 
@@ -319,7 +332,118 @@ body{
     justify-content: space-between;
     align-items: center;
 }
+
+@media only screen and (max-width: 1024px) {
+    
+    .parent{
+        width: 100vw;
+    }
+    .first-sec{
+        width: 20vw;
+        height: 100vh;
+    }
+    .left-links ul li {
+        padding-top: 1rem;
+        font-size: 0.8rem;
+       
+    } 
+    .left-links ul li span{
+        padding-right: 0;
+        
+    }
+   
+    .second-sec{
+        width: 35vw;
+        margin-left: 0.1rem;
+       
+    }
+    .second-head-sec{
+        margin-bottom: 1rem;
+    }
+    .second-sec-links{
+        margin: 2rem 0;
+    }
+    .time h3{
+        font-size: 0.8rem;
+    }
+    .time p{
+        font-size: 0.7rem;
+    }
+    .progress-bar{
+        width: 36vw;
+    }
+    .progress-chart{
+        width: 6rem;
+        height: 5.5rem;
+      
+    }
+    .progress-list li:nth-child(2n+1) {
+   
+        font-size: 0.7rem;
+        font-weight: bolder;
+        padding: 0.3rem 0 0 0;
+      }
+      .progress-list li:nth-child(2n) {
+        font-size: 0.6rem;
+        list-style-type: none;
+        opacity: 0.5;
+        margin-top: -0.5rem;
+      }
+
+    .third-sec{
+        width: 50vw;
+        margin-left: 0.1rem;
+    }
+    .third-header{
+        width: 32vw;
+        margin-bottom: 1rem
+    }
+    .search-box{
+        height: 2rem;
+        padding: 0;
+    }
+
+    .search-bar{
+        margin: 0;
+        height: 1.5rem;
+        width: 14rem;
+    }
+    .meeting-head{
+        width: 32vw;
+    }
+    .meeting-dates {
+      padding: 0.5rem;
+        width: 30vw; 
+        height: 19rem;
+    }
+    .meeting-dates article{
+        width: 0.5rem;
+        padding: 0;
+    }
+    .meeting-dates article{
+        width: 3.5rem;
+    }
+    .lighten{
+        font-size: 0.8rem;
+    }
+    .files-head{
+        width: 31vw;
+    }
+    .files{
+        width: 27.5vw;
+    }
+    .files article h4{
+        font-size: 0.8rem;
+    }
+    .files article p{
+        font-size: 0.6rem;
+    }
+}
+
 @media only screen and (max-width: 768px){
+    *{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
     body{
         padding: 1rem;
     }
@@ -333,24 +457,18 @@ body{
       justify-content: space-between;
   }
 .second-sec{
-    width: 80vw;
+    width: 90vw;
     margin: 0.1rem;
 }
 
 .second-head-sec{
-    width: 85vw;
+    width: 90vw;
     margin: 1rem 0;
-}
-.second-head-sec h2{
-    font-size: 1rem;
-}
-.second-head-sec p{
-    font-size: 0.6rem;
+    font-size: 1.8rem;
 }
 .second-sec-links {
     width: 100vw;
-    font-size: 0.8rem;
-    padding-right: 0.3rem;
+    font-size: 2rem;
     
 }
 .third-div{
@@ -361,23 +479,21 @@ body{
     display: none;
 }
 .time h3{
-    font-size: 0.6rem;
+    font-size: 1.5rem;
 }
 .time p {
-    font-size: 0.5rem;
+    font-size: 1rem;
 }
-
-
 .progress-text{
     margin-left: 0.1rem;
-    margin-top: -3rem;
+    margin-top: -2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
    
 }
 .progress-text p {
-    font-size: 0.7rem;  
+    font-size: 1.5rem;  
 }
 #hide{
     display: unset;
@@ -388,15 +504,15 @@ body{
     display: none;
 }
 .progress-bar{
-  
-    width: 88vw;
-    padding-bottom: 1rem;
+    padding-right: 1rem;
+    width: 87.5vw;
+    padding-bottom: 2rem;
+   
 }
 .progress-chart{
     height: 5rem;
     width: 5rem;
-    margin: 0 0 0 1.5rem;
-    
+    margin: 0 0 0 1.5rem; 
 }
 .progress-chart::after{
     position: absolute;
@@ -404,25 +520,22 @@ body{
 }
 .progress-chart::before{
     position: absolute;
-    left: 5.1rem;
-   
-    
+    left: 5.1rem;  
 }
-
 .progress-list li:nth-child(2n+1) {
-   
-    font-size: 0.5rem;
+    margin-left: 0;
+    font-size: 1.5rem;
     font-weight: bolder;
     padding: 0.3rem 0 0 0;
   }
   .progress-list li:nth-child(2n) {
-    font-size: 0.5rem;
+    font-size: 1.3rem;
     list-style-type: none;
     opacity: 0.5;
     margin-top: -0.5rem;
   }
 .hidden-header{
-    width: 85vw;
+    width: 90vw;
     height: 1rem;
     margin-bottom: 1rem;
     padding-bottom: 0.5rem;
@@ -447,7 +560,7 @@ body{
    align-items: center;
 }
 .hidden-icon{
-    margin-top: 0.5rem;
+    margin-top: 0.6rem;
 }
 .hidden-img{
     width: 2rem;
@@ -455,106 +568,59 @@ body{
 }
 
 .third-sec{
-    width: 80vw;
+    width: 90vw;
     margin: 0.1rem;
 }
 .third-header{
     display: none;
 }
 .meeting-head{
-  
-    width: 90vw;
-    margin-top: 0.5rem;
-    margin-bottom: 0;
-}
-.meeting-head h2{
-    font-size: 1rem;
-}
-.meeting-head p{
-    font-size: 0.7rem;
+    width: 90vw; 
+    font-size: 1.8rem;  
 }
 .meeting-dates{
-    width: 95vw;
-    height: 17rem;
-    transform: scale(0.8);
-    margin-left: -1.5rem;
-    margin-top: -0.2rem;
-    margin-bottom: -2rem;
+    width: 88vw;
+    height: 25rem;
+    margin-left: 0.5rem;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+    padding-top: 0 0.2rem;
 }
 .meeting-dates article{
-    height: 15rem;
+    height: 14rem;
+    width: 6rem;
+    font-size: 2rem;
+}
+
+.lighten{
+    font-size:1.3rem ;
 }
 .files-head{
-    width: 88vw;
+    width: 90vw;
+    font-size: 1.8rem;
    
 }
-.files-head h2{
-    font-size: 1rem;
-}
-.files-head p{
-    font-size: 0.6rem;
-}
+
 .files{
-    width: 80vw;
-    height: 2.5rem;
+    width: 88vw;
+    height: 5rem;
+   
 }
 .files img{
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 2rem;
+    height: 2rem;
 }
 .files article h4{
-    font-size: 0.8rem;
+    font-size: 2rem;
 }
 .files article p{
-    font-size: 0.7rem;
+    font-size: 1.5rem;
 }
 .files p{
-    font-size: 0.8rem;
+    font-size: 1.5rem;
 }
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
